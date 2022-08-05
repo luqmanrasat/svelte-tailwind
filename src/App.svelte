@@ -5,15 +5,35 @@
   import { recipes } from './stores/recipes';
   import Feature from './lib/Feature.svelte';
 
-  recipes.addRecipe({
-    title: '5 Bean Chili Stew',
-    writer: 'Recipe by Mario',
-    image: {
-      file: 'stew.jpg',
-      alt: 'stew',
+  recipes.addManyRecipes([
+    {
+      title: '5 Bean Chili Stew',
+      writer: 'Recipe by Mario',
+      image: {
+        file: 'stew.jpg',
+        alt: 'stew',
+      },
+      time: 25,
     },
-    time: 25,
-  });
+    {
+      title: 'Veg Noodles',
+      writer: 'Recipe by Mario',
+      image: {
+        file: 'noodles.jpg',
+        alt: 'noodles',
+      },
+      time: 25,
+    },
+    {
+      title: 'Tofu Curry',
+      writer: 'Recipe by Mario',
+      image: {
+        file: 'curry.jpg',
+        alt: 'curry',
+      },
+      time: 25,
+    },
+  ]);
 </script>
 
 <div>

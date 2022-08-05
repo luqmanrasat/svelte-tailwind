@@ -4,10 +4,12 @@
 </script>
 
 <div>
-  {#if !$latestRecipe}
-    <p>No recipe is stored.</p>
+  {#if $latestRecipe.length === 0}
+    <p>No latest recipe.</p>
   {:else}
     <!-- cards go here -->
-    <Card {...$latestRecipe} />
+    {#each $latestRecipe as recipe}
+      <Card {...recipe} />
+    {/each}
   {/if}
 </div>

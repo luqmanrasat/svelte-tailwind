@@ -15,14 +15,17 @@ function createRecipes() {
 
   return {
     subscribe,
-    addRecipe: (recipe: Recipe) => update((recipes) => [...recipes, recipe]),
+    addRecipe: (newRecipe: Recipe) =>
+      update((recipes) => [...recipes, newRecipe]),
+    addManyRecipes: (newRecipes: Recipe[]) =>
+      update((recipes) => [...recipes, ...newRecipes]),
     reset: () => set([]),
   };
 }
 
 export const recipes = createRecipes();
 
-export const latestRecipe = derived(
-  recipes,
-  ($recipes) => $recipes[$recipes.length - 1]
-);
+export const latestRecipe = derived(recipes, ($recipes) => {
+  const latestBy = 3;
+  return $recipes.slice($recipes.length - latestBy);
+});
