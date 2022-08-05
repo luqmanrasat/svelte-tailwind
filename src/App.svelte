@@ -20,9 +20,9 @@
     <Nav />
   </div>
   <main class="px-16 py-6">
-    <div>
+    <div class="flex justify-end">
       <a class="text-primary" href="#">Log in</a>
-      <a class="text-primary" href="#">Sign up</a>
+      <a class="text-primary ml-2" href="#">Sign up</a>
     </div>
     <header>
       <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -36,7 +36,7 @@
         <PopularRecipe />
       </Feature>
     </div>
-    <div>
+    <div class="flex justify-center">
       <div class="bg-secondary-100 text-secondary-200">Load more</div>
     </div>
   </main>
