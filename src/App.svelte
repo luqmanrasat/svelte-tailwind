@@ -19,7 +19,7 @@
   <div>
     <Nav />
   </div>
-  <main class="px-16 py-6">
+  <main class="bg-gray-100 px-16 py-6">
     <div class="flex justify-center md:justify-end">
       <a class="text-primary" href="#">Log in</a>
       <a class="text-primary ml-2" href="#">Sign up</a>
