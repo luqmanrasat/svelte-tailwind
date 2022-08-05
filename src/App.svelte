@@ -21,8 +21,8 @@
   </div>
   <main class="px-16 py-6">
     <div>
-      <a href="#">Log in</a>
-      <a href="#">Sign up</a>
+      <a class="text-primary" href="#">Log in</a>
+      <a class="text-primary" href="#">Sign up</a>
     </div>
     <header>
       <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -37,7 +37,7 @@
       </Feature>
     </div>
     <div>
-      <div>Load more</div>
+      <div class="bg-secondary-100 text-secondary-200">Load more</div>
     </div>
   </main>
 </div>
