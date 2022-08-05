@@ -3,6 +3,7 @@
   import LatestRecipe from "./lib/LatestRecipe.svelte";
   import PopularRecipe from "./lib/PopularRecipe.svelte";
   import { recipes } from "./stores/recipes";
+import Feature from "./lib/Feature.svelte";
 
   recipes.addRecipe({
     title: "5 Bean Chili Stew",
@@ -18,7 +19,7 @@
   <div>
     <Nav />
   </div>
-  <main>
+  <main class="px-16 py-6">
     <div>
       <a href="#">Log in</a>
       <a href="#">Sign up</a>
@@ -28,8 +29,12 @@
       <h3 class="text-2xl font-semibold">For Ninjas</h3>
     </header>
     <div>
-      <LatestRecipe />
-      <PopularRecipe />
+      <Feature title="Latest Recipes">
+        <LatestRecipe />
+      </Feature>
+      <Feature title="Most Popular">
+        <PopularRecipe />
+      </Feature>
     </div>
     <div>
       <div>Load more</div>
