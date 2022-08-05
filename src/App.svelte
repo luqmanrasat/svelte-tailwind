@@ -15,25 +15,27 @@
 </script>
 
 <div>
-  <Nav />
+  <div>
+    <Nav />
+  </div>
+  <main>
+    <div>
+      <a href="#">Log in</a>
+      <a href="#">Sign up</a>
+    </div>
+    <header>
+      <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+      <h3 class="text-2xl font-semibold">For Ninjas</h3>
+    </header>
+    <div>
+      <LatestRecipe />
+      <PopularRecipe />
+    </div>
+    <div>
+      <div>Load more</div>
+    </div>
+  </main>
 </div>
-<main>
-  <div>
-    <a href="#">Log in</a>
-    <a href="#">Sign up</a>
-  </div>
-  <header>
-    <h2>Recipes</h2>
-    <h3>For Ninjas</h3>
-  </header>
-  <div>
-    <LatestRecipe />
-    <PopularRecipe />
-  </div>
-  <div>
-    <div>Load more</div>
-  </div>
-</main>
 
 <style>
 </style>

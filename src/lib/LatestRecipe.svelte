@@ -3,7 +3,7 @@
   import { latestRecipe } from "../stores/recipes";
 </script>
 
-<h4>Latest Recipes</h4>
+<h4 class="font-bold">Latest Recipes</h4>
 <div>
   {#if !$latestRecipe}
     <p>No recipe is stored.</p>
