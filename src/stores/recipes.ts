@@ -1,4 +1,4 @@
-import { writable, derived } from "svelte/store";
+import { writable, derived } from 'svelte/store';
 
 type Recipe = {
   title: string;
@@ -7,6 +7,7 @@ type Recipe = {
     file: string;
     alt: string;
   };
+  time: number;
 };
 
 function createRecipes() {

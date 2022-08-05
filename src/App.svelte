@@ -12,6 +12,7 @@
       file: 'stew.jpg',
       alt: 'stew',
     },
+    time: 25,
   });
 </script>
 
