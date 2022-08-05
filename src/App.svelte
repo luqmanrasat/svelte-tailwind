@@ -1,16 +1,16 @@
 <script lang="ts">
-  import Nav from "./lib/Nav.svelte";
-  import LatestRecipe from "./lib/LatestRecipe.svelte";
-  import PopularRecipe from "./lib/PopularRecipe.svelte";
-  import { recipes } from "./stores/recipes";
-import Feature from "./lib/Feature.svelte";
+  import Nav from './lib/Nav.svelte';
+  import LatestRecipe from './lib/LatestRecipe.svelte';
+  import PopularRecipe from './lib/PopularRecipe.svelte';
+  import { recipes } from './stores/recipes';
+  import Feature from './lib/Feature.svelte';
 
   recipes.addRecipe({
-    title: "5 Bean Chili Stew",
-    writer: "Recipe by Mario",
+    title: '5 Bean Chili Stew',
+    writer: 'Recipe by Mario',
     image: {
-      file: "stew.jpg",
-      alt: "stew",
+      file: 'stew.jpg',
+      alt: 'stew',
     },
   });
 </script>

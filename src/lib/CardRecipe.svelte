@@ -5,7 +5,7 @@
 </script>
 
 <div>
-  <img src={`public/${image.file}`} alt={image.alt} />
+  <img src={`images/${image.file}`} alt={image.alt} />
   <div>
     <span>
       {title}
