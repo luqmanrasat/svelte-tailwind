@@ -5,7 +5,7 @@
   export let time: number;
 </script>
 
-<div class="bg-white rounded overflow-hidden shadow-md relative">
+<div class="card">
   <img
     class="w-full h-32 sm:h-48 object-cover"
     src={`images/${image.file}`}
@@ -19,7 +19,17 @@
       {writer}
     </span>
   </div>
-  <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+  <div class="badge">
     <span>{time} {time === 1 ? 'min' : 'mins'}</span>
   </div>
 </div>
+
+<style>
+  .card {
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+  }
+
+  .badge {
+    @apply bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+  }
+</style>
