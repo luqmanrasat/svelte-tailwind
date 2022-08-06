@@ -42,8 +42,8 @@
   </div>
   <main class="md:col-span-2 bg-gray-100 px-16 py-6">
     <div class="flex justify-center md:justify-end">
-      <a class="text-primary" href="#">Log in</a>
-      <a class="text-primary ml-2" href="#">Sign up</a>
+      <a class="btn text-primary border-primary md:border-2" href="#">Log in</a>
+      <a class="btn text-primary border-primary md:border-2 ml-2" href="#">Sign up</a>
     </div>
     <header>
       <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -58,10 +58,13 @@
       </Feature>
     </div>
     <div class="flex justify-center">
-      <div class="bg-secondary-100 text-secondary-200">Load more</div>
+      <div class="btn bg-secondary-100 text-secondary-200">Load more</div>
     </div>
   </main>
 </div>
 
 <style>
+  .btn {
+    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+  }
 </style>
