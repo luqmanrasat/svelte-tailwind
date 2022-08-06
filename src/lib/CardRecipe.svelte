@@ -1,4 +1,6 @@
 <script lang="ts">
+  import ClockIcon from '../assets/icons/clock.svg';
+
   export let title: string;
   export let writer: string;
   export let image: { file: string; alt: string };
@@ -20,6 +22,7 @@
     </span>
   </div>
   <div class="badge">
+    <svelte:component this={ClockIcon} class="inline-block w-5" />
     <span>{time} {time === 1 ? 'min' : 'mins'}</span>
   </div>
 </div>
