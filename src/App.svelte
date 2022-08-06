@@ -36,11 +36,11 @@
   ]);
 </script>
 
-<div>
-  <div>
+<div class="grid md:grid-cols-3">
+  <div class="md:col-span-1">
     <Nav />
   </div>
-  <main class="bg-gray-100 px-16 py-6">
+  <main class="md:col-span-2 bg-gray-100 px-16 py-6">
     <div class="flex justify-center md:justify-end">
       <a class="text-primary" href="#">Log in</a>
       <a class="text-primary ml-2" href="#">Sign up</a>

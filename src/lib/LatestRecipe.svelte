@@ -1,15 +1,13 @@
 <script lang="ts">
-  import Card from "./CardRecipe.svelte";
-  import { latestRecipe } from "../stores/recipes";
+  import Card from './CardRecipe.svelte';
+  import { latestRecipe } from '../stores/recipes';
 </script>
 
-<div>
-  {#if $latestRecipe.length === 0}
-    <p>No latest recipe.</p>
-  {:else}
-    <!-- cards go here -->
-    {#each $latestRecipe as recipe}
-      <Card {...recipe} />
-    {/each}
-  {/if}
-</div>
+{#if $latestRecipe.length === 0}
+  <p>No latest recipe.</p>
+{:else}
+  <!-- cards go here -->
+  {#each $latestRecipe as recipe}
+    <Card {...recipe} />
+  {/each}
+{/if}
