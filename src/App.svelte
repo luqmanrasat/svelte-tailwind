@@ -43,11 +43,11 @@
   <main class="md:col-span-2 bg-gray-100 px-16 py-6">
     <div class="flex justify-center md:justify-end">
       <a
-        class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
+        class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
         href="#">Log in</a
       >
       <a
-        class="btn text-primary border-primary md:border-2 ml-2 hover:bg-primary hover:text-white"
+        class="btn text-primary border-primary md:border-2 ml-2 hover:bg-primary hover:text-white transition ease-out duration-500"
         href="#">Sign up</a
       >
     </div>
@@ -64,7 +64,11 @@
       </Feature>
     </div>
     <div class="flex justify-center">
-      <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">Load more</div>
+      <div
+        class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
+      >
+        Load more
+      </div>
     </div>
   </main>
 </div>
