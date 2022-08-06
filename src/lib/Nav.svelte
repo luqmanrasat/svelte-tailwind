@@ -1,3 +1,22 @@
+<script lang="ts">
+  const links = [
+    {
+      text: 'Home',
+      link: '#',
+    },
+    {
+      text: 'About',
+      link: '#',
+    },
+    {
+      text: 'Contact',
+      link: '#',
+    },
+  ];
+
+  $: active = 'Home';
+</script>
+
 <nav>
   <div>
     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -5,8 +24,16 @@
     </h1>
   </div>
   <ul>
-    <li class="text-gray-700 font-bold"><a href="#"><span>Home</span></a></li>
-    <li><a href="#"><span>About</span></a></li>
-    <li><a href="#"><span>Contact</span></a></li>
+    {#each links as { text, link }}
+      <li class:active={active === text}>
+        <a href={link}><span>{text}</span></a>
+      </li>
+    {/each}
   </ul>
 </nav>
+
+<style>
+  .active {
+    @apply text-gray-700 font-bold;
+  }
+</style>
