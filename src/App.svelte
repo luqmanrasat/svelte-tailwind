@@ -37,7 +37,7 @@
 </script>
 
 <div class="grid md:grid-cols-3">
-  <div class="md:col-span-1">
+  <div class="md:col-span-1 md:flex md:justify-end">
     <Nav />
   </div>
   <main class="md:col-span-2 bg-gray-100 px-16 py-6">
